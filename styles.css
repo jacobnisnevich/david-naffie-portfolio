@@ -1,0 +1,49 @@
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #0D47A1;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+#body-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: white;
+	height: 100%;
+}
+
+#name {
+	font-family: 'Lato', sans-serif;
+	font-size: 96px;
+	margin-bottom: 20px;
+}
+
+#name .first {
+	font-weight: 300;
+}
+
+#name .last {
+	font-weight: 700;
+}
+
+#coming-soon {
+	font-family: 'Josefin Slab', serif;
+	font-size: 32px;
+}
+
+#circle {
+	position: fixed;
+	top: -300px;
+	right: -300px;
+	border-radius: 50%;
+	height: 600px;
+	width: 600px;
+	background-color: #90CAF9;
+	box-shadow: -10px 10px 15px #262d77;
+}
