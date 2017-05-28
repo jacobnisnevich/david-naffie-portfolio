@@ -6,14 +6,30 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Lato:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<script
+		src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+		crossorigin="anonymous"></script>
+	<script src="scripts.js"></script>
 </head>
 <body>
-	<div id="circle"></div>
+	<div id="circle">
+		<div class="circle-sector" id="home-button"><div>HOME</div></div>
+		<div class="circle-sector" id="newsfeed-button"><div>NEWSFEED</div></div>
+		<div class="circle-sector" id="portfolio-button"><div>PORTFOLIO</div></div>
+		<div class="circle-sector" id="about-button"><div>ABOUT ME</div></div>
+	</div>
 	<div id="body-container">
-		<div id="name-container">
-			<div id="name"><span class="first">DAVID</span> <span class="last">NAFFIE</span></div>
-			<div id="coming-soon">PIANIST ● PERFORMER ● COMPOSER ● ARRANGER</div>
+		<div class="view" id="home">
+			<div id="name-container">
+				<div id="name"><span class="first">DAVID</span> <span class="last">NAFFIE</span></div>
+				<div id="description">PIANIST ● PERFORMER ● COMPOSER ● ARRANGER</div>
+			</div>
 		</div>
+		<div class="view" id="newsfeed">NEWSFEED</div>
+		<div class="view" id="portfolio">PORTFOLIO</div>
+		<div class="view" id="about">ABOUT ME</div>
 	</div>
 </body>
 </html>
