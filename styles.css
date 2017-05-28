@@ -20,7 +20,7 @@ body {
 
 #home {
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: center;
 	flex-direction: column;
 	color: white;
@@ -32,9 +32,9 @@ body {
 
 #name-container {
 	padding: 20px;
+	margin-right: 20%;
 	background-color: #64B5F6;
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	border-radius: 20px;
@@ -72,11 +72,11 @@ body {
 
 #circle {
 	position: fixed;
-	top: -300px;
-	right: -300px;
+	top: -350px;
+	right: -350px;
 	border-radius: 50%;
-	height: 600px;
-	width: 600px;
+	height: 700px;
+	width: 700px;
 	background-color: #64B5F6;
 	box-shadow: rgba(0, 0, 0, 0.298039) 0px 19px 60px, rgba(0, 0, 0, 0.219608) 0px 15px 20px;
 }
@@ -98,9 +98,9 @@ body {
 	color: white;
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
-	font-size: 20px;
-	bottom: 510px;
-    left: 290px;
+	font-size: 24px;
+	bottom: 588px;
+	left: 338px;
 }
 
 #home-button {
@@ -108,8 +108,8 @@ body {
 }
 
 #home-button div {
-	bottom: 530px;
-    left: 320px;
+	bottom: 615px;
+	left: 370px;
 }
 
 #newsfeed-button {
