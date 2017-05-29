@@ -103,8 +103,14 @@ body {
 	left: 338px;
 }
 
+.circle-sector:hover {
+	filter: brightness(0.8);
+}
+
+
 #home-button {
 	transform: rotate(247.5deg);
+	background-color: #64B5F6;
 }
 
 #home-button div {
@@ -119,6 +125,7 @@ body {
 
 #portfolio-button {
 	transform: rotate(202.5deg);
+	background-color: #64B5F6;
 }
 
 #about-button {
