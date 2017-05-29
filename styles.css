@@ -90,6 +90,7 @@ body {
 	display: flex;
 	justify-content: center;
 	cursor: pointer;
+	transition: 100ms all ease-in;
 }
 
 .circle-sector div {
