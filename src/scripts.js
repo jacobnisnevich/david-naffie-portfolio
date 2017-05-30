@@ -1,13 +1,38 @@
 $(document).ready(function() {
-	var currentView = 'newsfeed';
+  var views = ['home', 'newsfeed', 'portfolio', 'about'];
+	var currentView = 'home';
+  var currentDateFilter = 0;
+
   $('#' + currentView).css('display', 'flex');
+  
+  loadNewsfeed();
 
-	$('#circle div').click(function() {
-		$('#' + currentView).hide();
-		currentView = $(this).attr('id').match(/(.*)\-button/)[1];
-		$('#' + currentView).css('display', 'flex');
-	});
+  $('#circle div').click(function() {
+    $('#' + currentView).hide();
+    currentView = $(this).attr('id').match(/(.*)\-button/)[1];
+    $('#' + currentView).css('display', 'flex');
+  });
 
+  $(document).on('click', '#newsfeed-filter-options div', function() {
+    var selectedIndex = $(this).index();
+
+    currentDateFilter = selectedIndex;
+    $('#newsfeed-filter-options .selected').removeClass('selected');
+    $(this).addClass('selected');
+
+    if (selectedIndex == 0) {
+      $('#newsfeed-list .article').show();
+    } else {
+      var month = $(this).data('month');
+      var year  = $(this).data('year');
+
+      $('#newsfeed-list .article').hide();
+      $('#newsfeed-list .article.m-' + month + '.y-' + year).show();
+    }
+  })
+});
+
+function loadNewsfeed() {
   var months = [];
   var monthNames = [
     'January',   'February', 'March',    'April', 
@@ -39,27 +64,7 @@ $(document).ready(function() {
       })
     })
   });
-
-  var currentDateFilter = 0;
-
-  $(document).on('click', '#newsfeed-filter-options div', function() {
-    var selectedIndex = $(this).index();
-
-    currentDateFilter = selectedIndex;
-    $('#newsfeed-filter-options .selected').removeClass('selected');
-    $(this).addClass('selected');
-
-    if (selectedIndex == 0) {
-      $('#newsfeed-list .article').show();
-    } else {
-      var month = $(this).data('month');
-      var year  = $(this).data('year');
-
-      $('#newsfeed-list .article').hide();
-      $('#newsfeed-list .article.m-' + month + '.y-' + year).show();
-    }
-  })
-});
+}
 
 function renderArticle(month, year, timestamp, content) {
   var parsedContent = marked(content);
