@@ -218,8 +218,8 @@ body {
 
 #newsfeed-filter-title {
 	font-family: 'Lato', sans-serif;
-	font-size: 24px;
-	padding: 5px;
+	font-size: 20px;
+	padding: 5px 2px;
 	border-bottom: 1px solid black;
 	margin-bottom: 20px;
 }
