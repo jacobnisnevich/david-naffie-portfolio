@@ -200,7 +200,7 @@ body {
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	left: 20px;
+	left: 0;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
@@ -209,7 +209,8 @@ body {
 
 #newsfeed-filter {
 	padding: 10px;
-	border-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
 	background-color: #BBDEFB;
 	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 30px, rgba(0, 0, 0, 0.23) 0px 6px 10px;
 	color: black;
