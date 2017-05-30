@@ -62,6 +62,9 @@ $(document).ready(function() {
 });
 
 function renderArticle(month, year, timestamp, content) {
-  $('#newsfeed-list').append('<div class="article m-' + month + ' y-' + year + '">' + 
-    markdown.toHTML(content) + '<div class="timestamp">' + timestamp + '</div></div>');
+  var parsedContent = marked(content);
+  var outer = '<div class="article m-' + month + ' y-' + year + '"></div>';
+  var inner = parsedContent + '<div class="timestamp">' + timestamp + '</div>';
+
+  $(outer).html(inner).appendTo('#newsfeed-list');
 }
