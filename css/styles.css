@@ -243,6 +243,8 @@ body {
 	position: absolute;
 	bottom: 30px;
 	left: 30px;
+	-webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
 }
 
 #music-notes img:nth-child(2) {
