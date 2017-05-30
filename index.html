@@ -5,13 +5,11 @@
 	<title>David Naffie</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Lato:300,400,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
-	<script
-		src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-		crossorigin="anonymous"></script>
-	<script src="scripts.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="lib/markdown.min.js"></script>
+	<script src="src/scripts.js"></script>
 </head>
 <body>
 	<div id="circle">
@@ -27,7 +25,24 @@
 				<div id="description">PIANIST ● PERFORMER ● COMPOSER ● ARRANGER</div>
 			</div>
 		</div>
-		<div class="view" id="newsfeed">NEWSFEED</div>
+		<div class="view" id="newsfeed">
+			<div id="newsfeed-title">Newsfeed</div>
+			<div id="newsfeed-list"></div>
+			<div id="newsfeed-filter-container">
+				<div id="newsfeed-filter">
+					<div id="newsfeed-filter-title">Filter by Date</div>
+					<div id="newsfeed-filter-options">
+						<div class="selected">Show All</div>
+					</div>
+				</div>
+			</div>
+			<div id="music-notes">
+				<img src="img/note.png">
+				<img src="img/note.png">
+				<img src="img/note.png">
+				<img src="img/note.png">
+			</div>
+		</div>
 		<div class="view" id="portfolio">PORTFOLIO</div>
 		<div class="view" id="about">ABOUT ME</div>
 	</div>
