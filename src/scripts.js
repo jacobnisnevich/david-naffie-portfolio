@@ -50,13 +50,13 @@ $(document).ready(function() {
     $(this).addClass('selected');
 
     if (selectedIndex == 0) {
-      $('#newsfeed-list .article').fadeIn('fast');
+      $('#newsfeed-list .article').show();
     } else {
       var month = $(this).data('month');
       var year  = $(this).data('year');
 
-      $('#newsfeed-list .article').fadeOut('fast');
-      $('#newsfeed-list .article.m-' + month + '.y-' + year).fadeIn('fast');
+      $('#newsfeed-list .article').hide();
+      $('#newsfeed-list .article.m-' + month + '.y-' + year).show();
     }
   })
 });
