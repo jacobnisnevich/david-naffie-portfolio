@@ -7,7 +7,7 @@ $(document).ready(function() {
   
   loadNewsfeed();
 
-  $('#circle div').click(function() {
+  $('#circle .circle-sector').click(function() {
     $('#' + currentView).hide();
     currentView = $(this).attr('id').match(/(.*)\-button/)[1];
     $('#' + currentView).css('display', 'flex');
